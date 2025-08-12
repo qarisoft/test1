@@ -1,12 +1,14 @@
 
 console.log(navigator.userAgent);
 document.getElementById('demo2').innerHTML=navigator.userAgent
-let data = window.localStorage.getItem('salah')
+let data = window.localStorage.getItem('salah2')
+console.log(data);
+
 if (!data) {
-  window.localStorage.setItem('salah','sssssssssssssssssssss')
+  window.localStorage.setItem('salah2','sssssssssssssssssssss')
 }
-data = window.localStorage.getItem('salah')
-document.getElementById('demo2').innerHTML=navigator.userAgent+ data
+data = window.localStorage.getItem('salah2')
+document.getElementById('demo2').innerHTML=`${navigator.userAgent } - ${data}`
 
 // window.localStorage.getItem
 
